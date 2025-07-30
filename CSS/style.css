@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Bungee+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img-responsive{
+    height: auto;
+    width: 30%;
+}
+.img-responsive2{
+    height: auto;
+    width: 100%;
+}
+.img-responsive3{
+    height: auto;
+    width: 5%;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: linear-gradient(-45deg, #38b6ff, #1f77aa, #124664);
+    background-size: 400% 400%;
+    animation: moverGradiente 10s ease infinite;
+    box-shadow: black 4px 4px 4px 4px;
+  }
+
+  @keyframes moverGradiente {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.logo{
+    text-align: center;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.botoes a{
+  color: white;
+  text-decoration: none;
+  font-family: "Kanit", "sans-serif";
+}
+.fundo{
+  height: 90vh;
+  background-image: url(../IMG/Bg\ \(2\).png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.texto1{
+  height: 100vh;
+  margin-top: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.divisao{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: 1px black solid;
+}
+.sobrenos{
+  border: 1px solid black;
+  background: linear-gradient(to top left,#38b6ff, #1f77aa, #124664);
+  color: white;
+}
+
+.sobrenos h2{
+  text-align: center;
+  font-family: "Kanit", "sans-serif";
+}
+.sobrenos p{
+  text-align: justify;
+  padding: 2vh;
+  font-size: 3.5vh;
+   font-family: "Kanit", "sans-serif";
+
+}
+.Oquefazemos{
+  border: 1px black solid;
+background: linear-gradient(to top left,#38b6ff, #1f77aa, #124664);
+color: white;
+}
+.Oquefazemos p {
+  text-align: justify;
+  padding: 2vh;
+  font-size: 3.5vh;
+   font-family: "Kanit", "sans-serif";
+}
+.Oquefazemos h1{
+  text-align: center;
+   font-family: "Kanit", "sans-serif";
+   
+}
+.comosurgimos{
+  border: 1px black solid;
+}
+.conteiner{
+  display: flex;
+  flex-direction: column;flex-wrap: wrap;
+}
+.botaozapzap{
+  height: 3vh;
+  display: flex;
+  flex-wrap: nowrap;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ position: fixed;
+ right: -10%;
+ bottom: 4vh;
+
+}
+@media (max-width: 768px) {
+
+  .botaozapzap{
+    right: -25%;
+  }
+}
