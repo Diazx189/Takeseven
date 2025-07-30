@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Bungee+Inline&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.img-responsive{
+    height: auto;
+    width: 30%;
+}
+.img-responsive2{
+    height: auto;
+    width: 100%;
+}
+.img-responsive3{
+    height: auto;
+    width: 5%;
+}
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    background: linear-gradient(-45deg, #38b6ff, #1f77aa, #124664);
+    background-size: 400% 400%;
+    animation: moverGradiente 10s ease infinite;
+    box-shadow: black 4px 4px 4px 4px;
+  }
+
+  @keyframes moverGradiente {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.logo{
+    text-align: center;
+}
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.botoes a{
+  color: white;
+  text-decoration: none;
+  font-family: "Kanit", "sans-serif";
+}
+.fundo{
+  height: 90vh;
+  background-image: url(../IMG/Bg\ \(2\).png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+/* .texto1{
+  height: 100vh;
+  margin-top: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.divisao{
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  border: 1px black solid;
+}
+.sobrenos{
+  border: 1px solid black;
+  background: linear-gradient(to top left,#38b6ff, #1f77aa, #124664);
+  color: white;
+}
+
+.sobrenos h2{
+  text-align: center;
+  font-family: "Kanit", "sans-serif";
+}
+.sobrenos p{
+  text-align: justify;
+  padding: 2vh;
+  font-size: 3.5vh;
+   font-family: "Kanit", "sans-serif";
+
+}
+.Oquefazemos{
+  border: 1px black solid;
+background: linear-gradient(to top left,#38b6ff, #1f77aa, #124664);
+color: white;
+}
+.Oquefazemos p {
+  text-align: justify;
+  padding: 2vh;
+  font-size: 3.5vh;
+   font-family: "Kanit", "sans-serif";
+}
+.Oquefazemos h1{
+  text-align: center;
+   font-family: "Kanit", "sans-serif";
+   
+}
+.comosurgimos{
+  border: 1px black solid;
+}*/
+.conteiner{
+  display: flex;
+  flex-direction: column;flex-wrap: wrap;
+} 
+.botaozapzap{
+  height: 3vh;
+  display: flex;
+  flex-wrap: nowrap;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ position: fixed;
+ right: -10%;
+ bottom: 4vh;
+
+}
+ 
+  
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 90vh;
+  height: 100vh;
+  justify-content: center;
+}
+.card{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  min-width: 40vh;
+  color: rgb(126, 0, 0);
+  width: 30vw;
+  border: 1px solid rgb(255, 0, 0);
+  text-align: center;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    margin-right: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      position: relative;
+    }
+  
+    .hamburger {
+      display: block;
+      font-size: 30px;
+      color: white;
+      cursor: pointer;
+      align-self: center;
+      margin-right: 20px;
+      z-index: 1001; /* garante que fique acima do menu */
+      position: relative;
+    }
+  
+    .botoes {
+      display: none;
+      flex-direction: column;
+      background: linear-gradient(-45deg, #38b6ff, #1f77aa, #124664);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100vw;
+      z-index: 1000;
+      text-align: center;
+    }
+  
+    .botoes a {
+      padding: 15px;
+      border-bottom: 1px solid white;
+      color: white;
+      text-decoration: none;
+    }
+    .hamburger {
+      display: block;
+      transition: 500ms;
+    }
+    .botaozapzap{
+        right: -25%;
+      }
+    }
